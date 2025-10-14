@@ -38,47 +38,52 @@ const App = () => {
       <div className="container">
         <div className="tm-top-bar"></div>
 
-        {/* Welcome Section */}
+        {/* === ABOUT ME SECTION === */}
         <section className="tm-welcome">
           <div className="tm-welcome-left">
             <div className="tm-logo">
-              <h1 className="tm-site-name">About me</h1>
+              <h1 className="tm-site-name">About Me</h1>
             </div>
             <div className="tm-welcome-content">
               <div className="tm-welcome-icons-container">
-                <i className="fas fa-crown fa-5x tm-welcome-icon"></i>
+                <i className="fas fa-laptop-code fa-5x tm-welcome-icon"></i>
                 <i className="fas fa-heart fa-5x tm-welcome-icon"></i>
               </div>
-              <h2 className="tm-mb-25">Maffia khate Guaro</h2>
+              <h2 className="tm-mb-25">Hi, I'm Maffia Khate Guaro</h2>
               <p className="tm-font-big">
-                <a
-                  // rel="nofollow"
-                  // href="http://www.templatemo.com/tm-519-beauty"
-                  // target="_parent"
-                >
-                  The Beauty CSS Template
-                </a>{" "}
-                BSIS 3 | Aspiring Business Analyst{" "}
-                <a
-                  href="https://plus.google.com/+templatemo"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  templatemo
-                </a>{" "}
-                and it is going to be helpful. Thank you.
+                 <strong>BSIS 3 | Aspiring Business Analyst</strong>
+              </p>
+              <p>
+                I’m currently pursuing a <b>Bachelor of Science in Information Systems</b>,
+                developing skills in <b>business processes</b>, <b>problem-solving</b>,
+                and <b>data analysis</b>.  
+                I’m passionate about bridging the gap between business needs and
+                technology solutions — continuously learning, growing, and exploring
+                ways to make digital systems smarter and more efficient.
+              </p>
+              <p>
+                 My goal is to become a <b>Business Analyst</b> who helps
+                organizations improve their operations and make data-driven decisions.
+                I love learning new technologies and taking on real-world projects
+                that challenge my creativity and logic.
+              </p>
+              <p>
+                 Reach me at:{" "}
+                <a href="mailto:maffiakhateg@gmail.com" className="tm-contact-link">
+                  maffiakhateg@gmail.com
+                </a>
               </p>
               <a href="#" className="tm-welcome-link tm-font-big">
-                Continue...
+                View My Projects
               </a>
             </div>
           </div>
-          <div className="tm-welcome-right"></div>
+         
         </section>
 
         <div className="tm-bar-2"></div>
 
-        {/* Section 2 */}
+        {/* === TECH STACK SECTION === */}
         <section className="row tm-section-mb tm-section-2">
           <div className="col-md-12 tm-section-2-inner">
             <div className="tm-section-2-left">
@@ -87,43 +92,38 @@ const App = () => {
             </div>
             <div className="tm-section-2-right tm-bg-primary">
               <div className="tm-section-2-text">
-                <h2 className="tm-section-2-header tm-mb-45">
-                  Let's get social!
-                </h2>
+                <h2 className="tm-section-2-header tm-mb-45"> Tech Stack</h2>
                 <p>
-                  Aliquam facilisis in orci et mattis. Duis et sem sit amet nibh
-                  euismod cursus. In sit amet metus purus. Sed tristique
-                  efficitur imperdiet. Proin ornare a nibh a tristique. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.
+                  <b>Languages:</b> JavaScript, PHP, HTML, CSS <br />
+                  <b>Frameworks & Tools:</b> React, Laravel, Node.js, MySQL, Git, Figma, VS Code <br />
+                  <b>Other Interests:</b> Data Analytics, UX/UI Design, Project Documentation
                 </p>
-                <p className="tm-p-ml">
-                  Nulla rutrum purus vitae vulputate tincidunt. Suspendisse eget
-                  mi justo. Ut in erat nec odio volutpat lacinia ac a quam.
-                  <br />
-                  <br />
-                  Integer pretium dapibus tellus vitae pretium. Nulla molestie
-                  lectus in viverra dignissim.
+                <p>
+                  I enjoy experimenting with new frameworks and building clean,
+                  user-friendly applications that make technology more accessible.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Section 3 */}
+        {/* === GITHUB STATS SECTION === */}
         <section className="row tm-section-3">
           <div className="col-md-12 tm-section-3-inner">
-            <div className="tm-section-3-left tm-bg-primary">
+            <div className="tm-section-3-left tm-bg-primary text-center">
               <div className="tm-section-3-text">
-                <i className="fas fa-users fa-5x tm-welcome-icon d-block text-center ml-0"></i>
-                <h2 className="tm-section-3-header tm-mb-35">Opportunities</h2>
-                <p>
-                  Praesent ac bibendum tortor, mollis interdum nisl. Integer
-                  egestas nec lectus fringilla consectetur. Nullam tempus ante
-                  ligula.
-                </p>
-                <a href="#" className="d-block tm-welcome-link">
-                  Continue...
-                </a>
+                <h2 className="tm-section-3-header tm-mb-35">GitHub Stats</h2>
+                <p>Here’s a quick look at my GitHub activity and progress!</p>
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=mffkht&show_icons=true&theme=radical"
+                  alt="GitHub Stats"
+                  className="img-fluid mb-3"
+                />
+                <img
+                  src="https://streak-stats.demolab.com?user=mffkht&theme=radical"
+                  alt="GitHub Streak"
+                  className="img-fluid"
+                />
               </div>
             </div>
             <div className="tm-section-3-right">
@@ -132,57 +132,49 @@ const App = () => {
           </div>
         </section>
 
-        {/* Gallery (React Slick Version) */}
+        {/* === IMAGE GALLERY (React Slick) === */}
         <section className="row tm-section-pb">
           <div className="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container mx-auto">
-            <h2 className="text-center tm-mb-45">Image Gallery</h2>
+            <h2 className="text-center tm-mb-45">My Project Gallery</h2>
             <Slider {...sliderSettings}>
               {galleryImages.map((img, index) => (
                 <div key={index} className="tm-gallery-item">
                   <img src={`img/${img}`} alt={`Gallery ${index + 1}`} />
-                  <p className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <p className="text-center">Project {index + 1} Showcase</p>
                 </div>
               ))}
             </Slider>
           </div>
         </section>
 
-        {/* Contact */}
+        {/* === CONTACT SECTION === */}
         <section className="row">
           <div className="col-md-7 d-flex tm-contact-left-col">
             <div className="tm-bg-primary tm-contact-left">
               <div className="tm-contact-left-inner">
-                <h2 className="text-center tm-mb-40 tm-contact-header">
-                  HERE WE ARE
-                </h2>
+                <h2 className="text-center tm-mb-40 tm-contact-header"> Get In Touch</h2>
                 <p className="tm-line-height-2 mb-5">
-                  Etiam congue tempor risus, id porta massa laoreet at. Nunc
-                  risus elit, porttitor sit amet sem.
+                  I’d love to connect! Whether you want to collaborate, ask questions,
+                  or just say hello — feel free to reach out.
                 </p>
                 <div className="mb-2 tm-font-normal">
-                  Tel:{" "}
-                  <a href="tel:0900900990" className="mt-5 tm-contact-link">
-                    090-090-0990
-                  </a>
-                </div>
-                <div className="mb-2 tm-font-normal">
-                  Fax:{" "}
-                  <a href="tel:0800800880" className="tm-contact-link">
-                    080-080-0880
-                  </a>
-                </div>
-                <div className="mb-2 tm-font-normal">
                   Email:{" "}
-                  <a href="mailto:info@company.com" className="tm-contact-link">
-                    info@company.com
+                  <a href="mailto:maffiakhateg@gmail.com" className="tm-contact-link">
+                    maffiakhateg@gmail.com
                   </a>
                 </div>
+                <div className="mb-2 tm-font-normal">
+                  GitHub:{" "}
+                  <a href="https://github.com/mffkht" target="_blank" rel="noreferrer" className="tm-contact-link">
+                    github.com/mffkht
+                  </a>
+                </div>
+               
               </div>
             </div>
           </div>
 
+          {/* Contact Form */}
           <div className="col-md-4">
             <form action="#" method="post" className="tm-contact-form">
               <div className="form-group mb-4">
@@ -227,17 +219,10 @@ const App = () => {
           </div>
         </section>
 
-        {/* Footer */}
+        {/* === FOOTER === */}
         <footer className="pt-4 pb-4">
           <p className="text-center tm-text-light-dark">
-            Copyright &copy; 2018 Company Name | Design:{" "}
-            <a
-              rel="nofollow"
-              href="http://templatemo.com"
-              className="tm-text-light-dark"
-            >
-              TemplateMo
-            </a>
+            © {new Date().getFullYear()} Maffia Khate Guaro 
           </p>
         </footer>
       </div>
