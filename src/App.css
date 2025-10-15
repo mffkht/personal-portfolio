@@ -136,3 +136,63 @@ html {
     font-size: 1.3rem;
   }
 }
+
+/* === PROJECTS SECTION STYLING === */
+
+#projects {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.tm-section-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.tm-project-card {
+  background: #fef6f8; /* very light pink background */
+  border: 2px solid #f4c2c2;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tm-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(244, 194, 194, 0.3);
+}
+
+.tm-project-content h3 {
+  color: #a45a52;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.tm-project-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Make GitHub link plain but elegant */
+.tm-contact-link {
+  color: #a45a52; /* puce tone text */
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tm-contact-link:hover {
+  color: #e89cae; /* lighter pink hover */
+  border-bottom: 2px solid #e89cae;
+}
+
+/* Slick carousel spacing */
+.slick-slide > div {
+  margin: 0 15px;
+}

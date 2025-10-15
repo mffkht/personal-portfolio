@@ -106,71 +106,141 @@ const App = () => {
 
         <div className="tm-bar-2"></div>
 
-        {/* === TECH STACK SECTION === */}
-        <section id="techstack" className="row tm-section-mb tm-section-2">
-          <div className="col-md-12 tm-section-2-inner">
-            <div className="tm-section-2-left">
-              <div className="tm-img-container tm-img-container-1"></div>
-              <div className="tm-img-container tm-img-container-2"></div>
-            </div>
-            <div className="tm-section-2-right tm-bg-primary">
-              <div className="tm-section-2-text">
-                <h2 className="tm-section-2-header tm-mb-45">Tech Stack</h2>
-                <p>
-                  <b>Languages:</b> JavaScript, PHP, HTML, CSS <br />
-                  <b>Frameworks & Tools:</b> React, Laravel, Node.js, MySQL, Git, Figma, VS Code <br />
-                  <b>Other Interests:</b> Data Analytics, UX/UI Design, Project Documentation
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+     {/* === SKILLS SECTION === */}
+<section id="techstack" className="row tm-section-mb tm-section-2">
+  <div className="col-md-12 tm-section-2-inner">
+    {/* Left side image (only one) */}
+    <div className="tm-section-2-left">
+      <div className="tm-img-container tm-img-container-1"></div>
+    </div>
 
-        {/* === PROJECTS SECTION === */}
-        <section id="projects" className="tm-section-mb">
-          <h2 className="text-center tm-section-header mb-5">Projects</h2>
-          <Slider {...sliderSettings}>
-            {projects.map((project, index) => (
-              <div key={index} className="tm-project-card">
-                <div className="tm-project-content">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <p>
-                    <strong>Technologies:</strong> {project.tech}
-                  </p>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="tm-contact-link"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </section>
+    {/* Right side text */}
+    <div className="tm-section-2-right tm-bg-primary">
+      <div className="tm-section-2-text">
+        <h2 className="tm-section-2-header tm-mb-45">Skills</h2>
+        <p>
+          A visual presentation of the programming languages, frameworks, and tools I am proficient in.
+          This section showcases my technical expertise through interactive and engaging elements such as
+          skill badges and charts.
+        </p>
+        <p>
+          <b>Languages:</b> JavaScript, PHP, HTML, CSS <br />
+          <b>Frameworks & Tools:</b> React, Laravel, Node.js, MySQL, Git, Figma, VS Code <br />
+          <b>Other Interests:</b> Data Analytics, UX/UI Design, Project Documentation
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        {/* === RESUME SECTION === */}
-        <section id="resume" className="tm-bg-primary tm-section-2 tm-section-mb text-center">
-          <h2 className="tm-section-2-header tm-mb-35">Resume</h2>
-          <p>
-            Here's a quick overview of my experience and goals.  
-            You can also download my full resume below.
-          </p>
-          <div className="mb-2 tm-font-normal">
-            Resume:{" "}
-            <a
-              href="https://www.canva.com/design/DAGiBW27zC0/9ubqn_J-VffoAoDONbceHA/edit"
-              target="_blank"
-              rel="noreferrer"
-              className="tm-contact-link"
-            >
-              my Resume
-            </a>
-          </div>
-        </section>
+
+       {/* === PROJECTS SECTION === */}
+<section id="projects" className="tm-section-mb text-center">
+  <h2 className="tm-section-header mb-5">Projects</h2>
+  <p className="mb-5">
+    A showcase of my technical projects, complete with descriptions, technologies used, 
+    and links to GitHub repositories. Visitors can explore the work I have done, 
+    understand my approach, and view my coding style.
+  </p>
+
+  <Slider {...sliderSettings}>
+    {/* === Project 1 === */}
+    <div className="tm-project-card">
+      <div className="tm-project-content">
+        <h3>AppDev1</h3>
+        <p>
+          A foundational project exploring core web development concepts such as 
+          responsive design, modular components, and front-end structure.
+        </p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <a
+          href="https://github.com/mffkht/appdev1"
+          target="_blank"
+          rel="noreferrer"
+          className="tm-contact-link"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+    {/* === Project 2 === */}
+    <div className="tm-project-card">
+      <div className="tm-project-content">
+        <h3>AppDev1 Midterm Exam</h3>
+        <p>
+          A React-based web application demonstrating CRUD functionality, 
+          interactive UI design, and modern front-end development techniques.
+        </p>
+        <p><strong>Technologies:</strong> React, JavaScript, Vite, CSS</p>
+        <a
+          href="https://github.com/mffkht/appdev1-midterm-exam"
+          target="_blank"
+          rel="noreferrer"
+          className="tm-contact-link"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+    {/* === Project 3 === */}
+    <div className="tm-project-card">
+      <div className="tm-project-content">
+        <h3>Practical Exam</h3>
+        <p>
+          A practical assessment project showcasing applied programming logic 
+          and front-end design implementation using clean, efficient code.
+        </p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <a
+          href="https://github.com/mffkht/Practical-exam"
+          target="_blank"
+          rel="noreferrer"
+          className="tm-contact-link"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </Slider>
+
+  <p className="mt-5">
+    💻 Explore more on my GitHub:{" "}
+    <a
+      href="https://github.com/mffkht"
+      target="_blank"
+      rel="noreferrer"
+      className="tm-contact-link"
+    >
+      github.com/mffkht
+    </a>
+  </p>
+</section>
+
+
+{/* === RESUME SECTION === */}
+<section id="resume" className="tm-bg-primary tm-section-2 tm-section-mb text-center">
+  <h2 className="tm-section-2-header tm-mb-35">Resume</h2>
+  <p>
+    A downloadable PDF version of my professional resume, summarizing my work experience, 
+    key accomplishments, and skills. This section provides a quick way for potential employers 
+    to review my qualifications.
+  </p>
+  <div className="mb-2 tm-font-normal">
+    <strong>Download Resume: </strong>
+    <a
+      href="img/Resume.pdf"  // ✅ points to public/Resume.pdf
+      target="_blank"
+      rel="noreferrer"
+      className="tm-contact-link"
+    >
+      View My Resume (PDF)
+    </a>
+  </div>
+</section>
+
+
 
         {/* === CONTACT SECTION === */}
         <section id="contact" className="row">
