@@ -44,7 +44,7 @@ Ensure you have Node.js and npm (or yarn) installed on your computer.
 
 # Installation
 Clone this repository to your local machine:
- git clone https://github.com/your-username/personal-portfolio.git
+ git clone https://github.com/mffkht/personal-portfolio.git
 Navigate to the project directory:
  cd personal-portfolio
 Install dependencies:
@@ -65,10 +65,7 @@ If using GitHub Pages, follow the official guide for deployment.
 # Live Demo
 You can access the live version of your portfolio once it's deployed:
 GitHub Pages URL:
-https://your-username.github.io/personal-portfolio
+https://mffkht.github.io/personal-portfolio/
 # Demo Recording:
-Your demo link here
-Upload it to your Google Drive and verify that the file is set to be accessible to others).
-Walkthrough of the webpage and codebase.
-No time limit, but make sure to cover both aspects. A high-level walkthrough is sufficient; no need to go into too much detail.
+https://drive.google.com/file/d/1DaRnCl166LkYDhRG1qIIKOqQd1aM49jA/view?usp=sharing
 
