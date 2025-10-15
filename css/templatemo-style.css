@@ -171,8 +171,11 @@ p {
 
 .tm-img-container-1 {
   background-image: url(../img/green-tree-red-cup.jpg);
-  background-position: top center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* ensures the full image is visible */
 }
+
 
 .tm-img-container-2 {
   background-image: url(../img/girl-01.jpg);
