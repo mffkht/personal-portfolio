@@ -67,5 +67,4 @@ You can access the live version of your portfolio once it's deployed:
 GitHub Pages URL:
 https://mffkht.github.io/personal-portfolio/
 # Demo Recording:
-https://drive.google.com/file/d/1DaRnCl166LkYDhRG1qIIKOqQd1aM49jA/view?usp=sharing
-
+https://drive.google.com/file/d/1mjs1KR2uNiF8NmzHgMUxKMvMNC2kAuX9/view?usp=sharing
