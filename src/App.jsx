@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./App.css";
 
+
+
 const App = () => {
   const sliderSettings = {
     dots: true,
@@ -65,7 +67,9 @@ const App = () => {
       </div>
 
       <div className="container pt-24"> {/* Added padding for nav spacing */}
-
+        <div>
+          
+        </div>
         {/* === ABOUT SECTION === */}
         <section id="about" className="tm-welcome">
           <div className="tm-welcome-left">
@@ -111,13 +115,7 @@ const App = () => {
   <div className="col-md-12 tm-section-2-inner">
     {/* Left side image (only one) */}
     <div className="tm-section-2-left">
-      <div>
-        <img
-          src="/img/my_id_picture.jpg"
-          alt="My Profile"
-          className="avatar-image img-fluid"
-        />
-      </div>
+      <div className="tm-img-container tm-img-container-1"></div>
     </div>
 
     {/* Right side text */}
@@ -138,7 +136,6 @@ const App = () => {
     </div>
   </div>
 </section>
-
 
 
        {/* === PROJECTS SECTION === */}
