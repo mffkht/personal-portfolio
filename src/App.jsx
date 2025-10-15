@@ -8,26 +8,55 @@ const App = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
-      { breakpoint: 991, settings: { slidesToShow: 3, slidesToScroll: 2 } },
-      { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 991, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
 
-  const galleryImages = [
-    "img-01.jpg",
-    "img-02.jpg",
-    "img-03.jpg",
-    "img-04.jpg",
-    "img-05.jpg",
-    "img-06.jpg",
+  const projects = [
+    {
+      title: "Note Taking App",
+      description:
+        "A full CRUD web app built using Laravel Breeze and React. Users can create, update, and delete notes.",
+      tech: "Laravel, React, MySQL, Tailwind CSS",
+      github: "https://github.com/mffkht/note-taking-app",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "My personal portfolio website showcasing my projects, skills, and background.",
+      tech: "React, CSS, GitHub Pages",
+      github: "https://github.com/mffkht/portfolio",
+    },
+    {
+      title: "Task Manager",
+      description:
+        "A simple task-tracking system that helps organize work using a responsive interface.",
+      tech: "JavaScript, Node.js, Express, MongoDB",
+      github: "https://github.com/mffkht/task-manager",
+    },
   ];
 
   return (
     <>
+{/* === SQUARE PINK BUTTON NAVIGATION BAR === */}
+<header className="navbar">
+  <div className="nav-container">
+    
+    <nav className="nav-links">
+      <a href="#about" className="nav-square">About</a>
+      <a href="#techstack" className="nav-square">Tech Stack</a>
+      <a href="#projects" className="nav-square">Projects</a>
+      <a href="#resume" className="nav-square">Resume</a>
+      <a href="#contact" className="nav-square">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
       {/* Loader */}
       <div id="loader-wrapper">
         <div id="loader"></div>
@@ -35,11 +64,10 @@ const App = () => {
         <div className="loader-section section-right"></div>
       </div>
 
-      <div className="container">
-        <div className="tm-top-bar"></div>
+      <div className="container pt-24"> {/* Added padding for nav spacing */}
 
-        {/* === ABOUT ME SECTION === */}
-        <section className="tm-welcome">
+        {/* === ABOUT SECTION === */}
+        <section id="about" className="tm-welcome">
           <div className="tm-welcome-left">
             <div className="tm-logo">
               <h1 className="tm-site-name">About Me</h1>
@@ -51,40 +79,35 @@ const App = () => {
               </div>
               <h2 className="tm-mb-25">Hi, I'm Maffia Khate Guaro</h2>
               <p className="tm-font-big">
-                 <strong>BSIS 3 | Aspiring Business Analyst</strong>
+                <strong>BSIS 3 | Aspiring Business Analyst</strong>
               </p>
               <p>
                 I’m currently pursuing a <b>Bachelor of Science in Information Systems</b>,
                 developing skills in <b>business processes</b>, <b>problem-solving</b>,
-                and <b>data analysis</b>.  
-                I’m passionate about bridging the gap between business needs and
-                technology solutions — continuously learning, growing, and exploring
-                ways to make digital systems smarter and more efficient.
+                and <b>data analysis</b>.
               </p>
               <p>
-                 My goal is to become a <b>Business Analyst</b> who helps
-                organizations improve their operations and make data-driven decisions.
-                I love learning new technologies and taking on real-world projects
-                that challenge my creativity and logic.
+                I’m passionate about bridging the gap between business needs and technology
+                solutions — continuously learning, growing, and exploring ways to make
+                digital systems smarter and more efficient.
               </p>
               <p>
-                 Reach me at:{" "}
+                Reach me at:{" "}
                 <a href="mailto:maffiakhateg@gmail.com" className="tm-contact-link">
                   maffiakhateg@gmail.com
                 </a>
               </p>
-              <a href="#" className="tm-welcome-link tm-font-big">
+              <a href="#projects" className="tm-welcome-link tm-font-big">
                 View My Projects
               </a>
             </div>
           </div>
-         
         </section>
 
         <div className="tm-bar-2"></div>
 
         {/* === TECH STACK SECTION === */}
-        <section className="row tm-section-mb tm-section-2">
+        <section id="techstack" className="row tm-section-mb tm-section-2">
           <div className="col-md-12 tm-section-2-inner">
             <div className="tm-section-2-left">
               <div className="tm-img-container tm-img-container-1"></div>
@@ -92,67 +115,69 @@ const App = () => {
             </div>
             <div className="tm-section-2-right tm-bg-primary">
               <div className="tm-section-2-text">
-                <h2 className="tm-section-2-header tm-mb-45"> Tech Stack</h2>
+                <h2 className="tm-section-2-header tm-mb-45">Tech Stack</h2>
                 <p>
                   <b>Languages:</b> JavaScript, PHP, HTML, CSS <br />
                   <b>Frameworks & Tools:</b> React, Laravel, Node.js, MySQL, Git, Figma, VS Code <br />
                   <b>Other Interests:</b> Data Analytics, UX/UI Design, Project Documentation
                 </p>
-                <p>
-                  I enjoy experimenting with new frameworks and building clean,
-                  user-friendly applications that make technology more accessible.
-                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* === GITHUB STATS SECTION === */}
-        <section className="row tm-section-3">
-          <div className="col-md-12 tm-section-3-inner">
-            <div className="tm-section-3-left tm-bg-primary text-center">
-              <div className="tm-section-3-text">
-                <h2 className="tm-section-3-header tm-mb-35">GitHub Stats</h2>
-                <p>Here’s a quick look at my GitHub activity and progress!</p>
-                <img
-                  src="https://github-readme-stats.vercel.app/api?username=mffkht&show_icons=true&theme=radical"
-                  alt="GitHub Stats"
-                  className="img-fluid mb-3"
-                />
-                <img
-                  src="https://streak-stats.demolab.com?user=mffkht&theme=radical"
-                  alt="GitHub Streak"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="tm-section-3-right">
-              <div className="tm-img-container tm-img-container-3"></div>
-            </div>
-          </div>
-        </section>
-
-        {/* === IMAGE GALLERY (React Slick) === */}
-        <section className="row tm-section-pb">
-          <div className="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container mx-auto">
-            <h2 className="text-center tm-mb-45">My Project Gallery</h2>
-            <Slider {...sliderSettings}>
-              {galleryImages.map((img, index) => (
-                <div key={index} className="tm-gallery-item">
-                  <img src={`img/${img}`} alt={`Gallery ${index + 1}`} />
-                  <p className="text-center">Project {index + 1} Showcase</p>
+        {/* === PROJECTS SECTION === */}
+        <section id="projects" className="tm-section-mb">
+          <h2 className="text-center tm-section-header mb-5">Projects</h2>
+          <Slider {...sliderSettings}>
+            {projects.map((project, index) => (
+              <div key={index} className="tm-project-card">
+                <div className="tm-project-content">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <p>
+                    <strong>Technologies:</strong> {project.tech}
+                  </p>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="tm-contact-link"
+                  >
+                    View on GitHub
+                  </a>
                 </div>
-              ))}
-            </Slider>
+              </div>
+            ))}
+          </Slider>
+        </section>
+
+        {/* === RESUME SECTION === */}
+        <section id="resume" className="tm-bg-primary tm-section-2 tm-section-mb text-center">
+          <h2 className="tm-section-2-header tm-mb-35">Resume</h2>
+          <p>
+            Here's a quick overview of my experience and goals.  
+            You can also download my full resume below.
+          </p>
+          <div className="mb-2 tm-font-normal">
+            Resume:{" "}
+            <a
+              href="https://www.canva.com/design/DAGiBW27zC0/9ubqn_J-VffoAoDONbceHA/edit"
+              target="_blank"
+              rel="noreferrer"
+              className="tm-contact-link"
+            >
+              my Resume
+            </a>
           </div>
         </section>
 
         {/* === CONTACT SECTION === */}
-        <section className="row">
+        <section id="contact" className="row">
           <div className="col-md-7 d-flex tm-contact-left-col">
             <div className="tm-bg-primary tm-contact-left">
               <div className="tm-contact-left-inner">
-                <h2 className="text-center tm-mb-40 tm-contact-header"> Get In Touch</h2>
+                <h2 className="text-center tm-mb-40 tm-contact-header">Get In Touch</h2>
                 <p className="tm-line-height-2 mb-5">
                   I’d love to connect! Whether you want to collaborate, ask questions,
                   or just say hello — feel free to reach out.
@@ -165,11 +190,15 @@ const App = () => {
                 </div>
                 <div className="mb-2 tm-font-normal">
                   GitHub:{" "}
-                  <a href="https://github.com/mffkht" target="_blank" rel="noreferrer" className="tm-contact-link">
+                  <a
+                    href="https://github.com/mffkht"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="tm-contact-link"
+                  >
                     github.com/mffkht
                   </a>
                 </div>
-               
               </div>
             </div>
           </div>
@@ -180,7 +209,6 @@ const App = () => {
               <div className="form-group mb-4">
                 <input
                   type="text"
-                  id="contact_name"
                   name="contact_name"
                   className="form-control"
                   placeholder="Name"
@@ -190,7 +218,6 @@ const App = () => {
               <div className="form-group mb-4">
                 <input
                   type="email"
-                  id="contact_email"
                   name="contact_email"
                   className="form-control"
                   placeholder="Email"
@@ -200,7 +227,6 @@ const App = () => {
               <div className="form-group mb-4">
                 <textarea
                   rows="6"
-                  id="contact_message"
                   name="contact_message"
                   className="form-control"
                   placeholder="Message"
@@ -208,10 +234,7 @@ const App = () => {
                 ></textarea>
               </div>
               <div className="form-group mb-0">
-                <button
-                  type="submit"
-                  className="btn btn-primary tm-btn-round tm-fl-right"
-                >
+                <button type="submit" className="btn btn-primary tm-btn-round tm-fl-right">
                   Send
                 </button>
               </div>
@@ -222,7 +245,7 @@ const App = () => {
         {/* === FOOTER === */}
         <footer className="pt-4 pb-4">
           <p className="text-center tm-text-light-dark">
-            © {new Date().getFullYear()} Maffia Khate Guaro 
+            © {new Date().getFullYear()} Maffia Khate Guaro
           </p>
         </footer>
       </div>

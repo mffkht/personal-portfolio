@@ -4,3 +4,96 @@
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, label, input, textarea, button {
   color: #000 !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === NAVIGATION BAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff; /* keep white */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 6px 0; /* thinner navbar */
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6px 30px; /* smaller vertical padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === LOGO === */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 1px;
+}
+
+.nav-logo span {
+  color: #ec4899; /* pink accent */
+  font-weight: 800;
+}
+
+/* === PINK SQUARE BUTTONS === */
+.nav-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-square {
+  background: #ec4899;
+  color: #fff;
+  padding: 6px 14px; /* smaller padding for thin design */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(236, 72, 153, 0.3);
+}
+
+/* Hover effect */
+.nav-square:hover {
+  background: #f472b6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(236, 72, 153, 0.4);
+  border-color: #fff;
+}
+
+/* Click effect */
+.nav-square:active {
+  transform: scale(0.96);
+}
+
+/* === Scroll effect === */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 3px 10px rgba(236, 72, 153, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+}
