@@ -106,12 +106,18 @@ const App = () => {
 
         <div className="tm-bar-2"></div>
 
-     {/* === SKILLS SECTION === */}
+    {/* === SKILLS SECTION === */}
 <section id="techstack" className="row tm-section-mb tm-section-2">
   <div className="col-md-12 tm-section-2-inner">
     {/* Left side image (only one) */}
     <div className="tm-section-2-left">
-      <div className="tm-img-container tm-img-container-1"></div>
+      <div>
+        <img
+          src="/img/my_id_picture.jpg"
+          alt="My Profile"
+          className="avatar-image img-fluid"
+        />
+      </div>
     </div>
 
     {/* Right side text */}
@@ -132,6 +138,7 @@ const App = () => {
     </div>
   </div>
 </section>
+
 
 
        {/* === PROJECTS SECTION === */}
